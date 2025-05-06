@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amanda Taróloga</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Amanda Taróloga</h1>
+            <p>Descubra seu destino através das cartas</p>
+        </header>
+
+        <main>
+            <div class="cards-container" id="cardsContainer">
+                <!-- As cartas serão inseridas aqui via JavaScript -->
+            </div>
+        </main>
+
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <span class="close-button" onclick="closePopup()">&times;</span>
+                <h2 id="popupTitle"></h2>
+                <p id="popupMessage"></p>
+                <audio id="popupAudio" style="display: none;"></audio>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; <span id="currentYear"></span> Amanda Taróloga. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="js/cards.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
